@@ -1,0 +1,67 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,trees}
+
+%opening
+\title{Standard Model of Particle Physics \\ Homework Assignment 2}
+
+\begin{document}
+
+\maketitle
+
+\paragraph*{Lie Groups and Lie Algebras}
+\begin{enumerate}
+  \item Show that if the generators of a Lie group satisfy the Lie algebra
+  \begin{equation*}
+    \left[ T^a, T^b \right] = i f^{abc} T^c,
+  \end{equation*}
+  then the generators in the adjoint representation, defined by
+  \begin{equation*}
+    (T^a)_{bc} = -i f^{abc},
+  \end{equation*}
+  satisfy the Lie algebra.
+  \item Show that $T^2 = \sum_a T^a T^a$ commutes with each of the group generators. As a consequence, $(T^2)_{ij} = C_2(r) \delta_{ij}$, where the constant $C_2(r)$ is called the quadratic Casimir of the representation $r$.
+  \item Suppose the generators are normalized so that
+  \begin{equation*}
+    \hbox{Tr}\, T^a T^b = \mu_r \delta^{ab},
+  \end{equation*}
+  where the constant $\mu_r$ depends on the representation $r$. Suppose the generators in the representation $r$ are $n \times n$ matrices. Show that
+  \begin{equation*}
+    n_r C_2(r) = n_{adjoint} \mu_r.
+  \end{equation*}
+  \item Suppose the generators of $SU(N)$ in the fundamental representation are normalized by
+  \begin{equation*}
+    \hbox{Tr}\, T^a T^b = \frac{1}{2} \delta^{ab}.
+  \end{equation*}
+  Calculate the quadratic Casimir $C_2$ in this representation.
+\end{enumerate}
+
+\paragraph*{Gauge Theories}
+\begin{enumerate}
+  \item Under a gauge transformation the gauge field $A_\mu = A^a_\mu T^a$ transform as
+  \begin{equation*}
+    A_\mu \to U A_\mu U^\dagger - \frac{i}{e} U \partial_\mu U^\dagger.
+  \end{equation*}
+  By considering an infinitesimal constant transformation $U = \exp \left[ i \sum_a \theta^a T^a \right]$, with $\theta^a \ll 1$, show that the gauge fields $A^a_\mu$ transform in the adjoint representation of the group.
+  \item Assume a set of Dirac spinors $\Psi_{Ij}$, $I = 1,\ldots,n_{r_1}$, $j = 1,\ldots,n_{r_2}$, transforms in an $(n_{r_1} \times n_{r_2})$-dimensional representation of a product gauge group $SU(N_1) \times SU(N_2)$. The generators of the group in this representation take the form $T^A_{IJ} \times 1$ and $1 \times t^a_{ij}$ with $A = 1,\ldots,N_1^2 - 1$ and $a = 1,\ldots,N_2^2 - 1$, and the gauge couplings are $e_1$ and $e_2$.
+  \\
+  Write the form of the gauge-invariant Lagrangian, including appropriate gauge fields and assuming the Dirac spinor fields  are minimally coupled.
+  \item Assume in the previous part that the gauge group is $SU(N) \times SU(N)$, and the Dirac spinors transform in a representation $r$ of the first $SU(N)$ and the conjugate representation $\bar{r}$ of the second $SU(N)$.
+  \\
+  Show that the following Lagrangian density is gauge invariant:
+  \begin{equation*}
+    \mathcal{L} = \bar{\Psi} \gamma^\mu (i\partial_\mu \Psi - e_1 A^A_\mu T_A \Psi + e_2 \Psi B^b_\mu T^b),
+  \end{equation*}
+  where $A^A_\mu$ and $B^b_\mu$ are the gauge fields associated with the two $SU(N)$ gauge group factors.
+\end{enumerate}
+
+\end{document}
