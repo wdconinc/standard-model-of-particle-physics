@@ -1,0 +1,72 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,trees}
+
+%opening
+\title{Standard Model of Particle Physics \\ Midterm Exam}
+
+\begin{document}
+
+\maketitle
+
+\paragraph*{Higgs Mechanism}
+\begin{enumerate}
+  \item Show that the Higgs boson can decay to two photons. Draw the appropriate Feynman diagram.
+\end{enumerate}
+
+\paragraph*{Form Factors and Structure Functions}
+\begin{enumerate}
+  \item Based on the pdfs in $F(x)$ show that the ratio
+  \begin{equation*}
+    \frac{1}{4} \le \frac{F_2^{en}(x)}{F_2^{ep}(x)} \le 4
+  \end{equation*}
+  whatever the value of $x$. The lower (upper) limit would be realized if only $u$ ($d$) quarks were present in the proton.
+\end{enumerate}
+
+\paragraph*{Decays}
+\begin{enumerate}
+  \item The interaction of the $Z$ (the massive neutral vector boson in the electroweak theory) with a fermion $f$ is
+  \begin{equation*}
+    \mathcal{L}_I = -G \bar{\psi} \gamma^\mu (g_V - g_A \gamma^5) \psi Z_\mu,
+  \end{equation*}
+  where $G$, $g_V$, and $g_A$ are real constants. Calculate the width for $Z \to \bar{f} f$. Let $M_Z$ and $m$ be the $Z$ and $f$ masses, and set $G = 1$. [Langacker 2.18]
+  \item The $\Lambda$ is a heavy spin-$\frac{1}{2}$ hyperon which decays into $p\pi^-$ via the non-leptonic weak interaction. The decay interaction can be modeled by
+  \begin{equation*}
+    \mathcal{L}_I = \bar{\psi}_p (g_S - g_P \gamma^5) \psi_\Lambda \phi_{\pi^+} + \mbox{h.c.},
+  \end{equation*}
+  where $g_S$ and $g_P$ are complex constants. [Langacker 2.19]
+  \begin{enumerate}
+    \item Calculate the width $\Gamma$ and the differential width $d\Gamma/d\cos\theta$ in the $\Lambda$ rest frame for a polarized $\Lambda$, where $\theta$ is the angle between $\hat{s}_\Lambda$ and the proton momentum $\vec{p}_p$. Use trace techniques.
+    \item Show that $d\Gamma/d\cos\theta$ is not reflection invariant for $\Re (g_P g_S^*) \ne 0$, i.e., that it is not invariant under $\vec{p}_p \to -\vec{p}_p$, $\hat{s}_\Lambda \to \hat{s}_\Lambda$.
+    \item Repeat the first part, but use explicit expressions for the $\Lambda$ and $p$ spinors in the Pauli-Dirac representation.
+  \end{enumerate}
+\end{enumerate}
+
+\paragraph*{Gauge Theories}
+\begin{enumerate}
+  \item The W and Z bosons obtain their mass through the Higgs mechanism. The quantum theory of vector fields requires gauge invariance for renormalizability, but it is valuable to consider briefly the most general free theory of massive vector fields so that we can compare with the gauge-invariant theory.
+
+  The most general Lagrangian density for the vector field including terms quadratic in the field with at most two derivatives is (up to the addition of total derivatives):
+  \begin{equation*}
+    \mathcal{L} = -\frac{1}{2} \partial_\mu A_\nu \partial^\mu A^\nu + b \partial_\mu A_\nu \partial^\nu A^\mu + c A_\mu A^\mu.
+  \end{equation*}
+  \begin{enumerate}
+    \item What are the Euler-Lagrange equations for this theory?
+    \item Assume a plane wave solution of the form $A^\mu(x) = \epsilon^\mu(\vec{k})e^{-i k \cdot x}$. What are the Euler-Lagrange equations in terms of $\epsilon^\mu$ and $k^\mu$.
+    \item Longitudinal mode: Assume $\epsilon^\mu(\vec{k}) \propto k^\mu$. What are the Euler-Lagrange equations for this ansatz in terms of $\epsilon^\mu$ and $k^\mu$? Define $k_\mu k^\mu \equiv m_L^2$. What is the longitudional mass $m_L$ in terms of the parameters $b$ and $c$ in the Lagrangian?
+    \item Transverse modes: Repeat the previous part assuming that $\epsilon_\mu k^\mu = 0$. This time define $k_\mu k^\mu \equiv m_T^2$. What is $m_T$?
+    \item The longitudinal mode will not propagate if $m_L \to \infty$. What choice of $b$ accomplishes this? Make that choice and rewrite $\mathcal{L}$ in terms of $A^\mu$, $m_T$, and $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$. This is the Proca Lagrangian of massive electrodynamics. You should recover Maxwell's theory if you take $m_T \to 0$.
+    \item Consider the Proca Lagrangian you have just derived. If $m_T \ne 0$ then the action is not gauge invariant. Show that the Lorenz gauge condition $\partial_\mu A^\mu = 0$ follows from the equations of motion as long as $m_T \ne 0$.
+  \end{enumerate}
+\end{enumerate}
+
+\end{document}
