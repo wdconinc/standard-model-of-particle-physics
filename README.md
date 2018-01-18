@@ -7,5 +7,3 @@ This repository contains the materials for the graduate physics course "The Stan
 ## Copyright
 
 This material is licensed under the Creative Commons Attribution Sharealike 4.0 license. For details, see the LICENSE.md file.
-
-
