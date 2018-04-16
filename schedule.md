@@ -51,16 +51,15 @@ References in [square brackets] indicate an approximation of the material to be 
   * Tuesday: The Z, the W, and the Weak Neutral Current [Langacker 7.3]
   * Thursday: The Higgs [Langacker 7.5]
 * Week 12
-  * Tuesday: CKM Matrix and CP Violation [Langacker 7.6]
-  * Thursday: CKM Matrix and CP Violation [Langacker 7.6]
+  * Tuesday: The Z, the W, and the Weak Neutral Current [Langacker 8.3]
+  * Thursday: The Higgs [Langacker 8.5, problem 8.12]
 * Week 13
-  * Tuesday: Neutrino mass and mixing [Langacker 7.7]
-  * Thursday: Neutrino mass and mixing [Langacker 7.7]
+  * Tuesday: Neutrino mass and mixing [Langacker 9.1-9.2, problem 9.2]
+  * Thursday: Neutrino mass and mixing [Langacker 9.3-9.4, problem 9.4]
 * Week 14
-  * Tuesday: Problems with the Standard Model [Langacker 8.1]
-        *Take-home final handed out*
-  * Thursday:
-      BTSM Presentations by Owen, Radhakrishnan, Khan
+  * Tuesday: Problems with the Standard Model [Langacker 10.1], BTSM Final Presentations (x1)
+  * Thursday: BTSM Final Presentations (x4)
+      *Take-home final handed out*
 * Week 15 (finals week)
   * Tuesday
         *Take-home final due*
